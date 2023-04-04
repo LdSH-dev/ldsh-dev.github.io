@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <!-- jQuery CDN -->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <!-- GSAP CDN -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+	<title>LdSH Developer</title>
+    <body>
+        <div class="container">
+          <div class="header">
+            <h1 class="logo">Procurando um desenvolvedor para fazer o website de sua empresa?</h1>
+            <a class="btn btn-contato" href="https://api.whatsapp.com/send/?phone=5551989007666&text=*Gostaria%20de%20realizar%20um%20or%C3%A7amento!*&type=phone_number&app_absent=0" target='_blank'>Realizar orçamento</a>
+          </div>
+
+          <div class="profile">
+              <img src="assets/img/profile.jpg" alt="Imagem de Perfil">
+              <div class="profile-description">
+                <p>Quem eu sou?</p>
+              </div>
+          </div>
+          
+        <ul class="skills-list">
+			<li>
+				<span class="skill-name">Programação</span>
+				<div class="skill-level">
+					<div class="progress-bar" style="width: 100%;"></div>
+				</div>
+			</li>
+			<li>
+				<span class="skill-name">Design</span>
+				<div class="skill-level">
+					<div class="progress-bar" style="width: 100%;"></div>
+				</div>
+			</li>
+			<li>
+				<span class="skill-name">Criatividade</span>
+				<div class="skill-level">
+					<div class="progress-bar" style="width: 100%;"></div>
+				</div>
+			</li>
+			<li>
+				<span class="skill-name">Comunicação</span>
+				<div class="skill-level">
+					<div class="progress-bar" style="width: 100%;"></div>
+				</div>
+			</li>
+			<li>
+				<span class="skill-name">Trabalho em equipe</span>
+				<div class="skill-level">
+					<div class="progress-bar" style="width: 100%;"></div>
+				</div>
+			</li>
+		</ul>
+
+          <div class="card">
+            <h2>Nasa - Analisador de corpos celestes (W.I.P)</h2>
+            <p>Em fevereiro de 2023, inicializei a construção de um software cujo objetivo é identificar corpos celestes de imagens provindas de satélites da Nasa. Para a realização do projeto estou utilizando as API's da NASA, mais especificamente a APOD. Quando recebo as imagens do dia, direciono elas para diversas técnicas de processamento utilizando cv2, mathplotlib e numpy, visando identificar formatos esféricos e corpos com colorações semelhantes a do catálogo de níveis de estrelas. Após isso, salvo o arquivo modificado com os contornos nas estrelas e específico a densidade estelar da imagem.</p>
+            <a class="btn" href="https://github.com/LdSH-dev/NasaImageAnalyzer" target="_blank">Ver mais</a>
+          </div>
+          
+          <div class="card">
+            <h2>Lista de tarefas - Single Page Application</h2>
+            <p>O projeto consiste em demonstrar meus conhecimentos em PHP utilizando o framework CodeIgniter, bem como utilizar JQuery para realizar as operações da ToDo List sem reloads de página no processamento.</p>
+            <a class="btn" href="https://github.com/LdSH-dev/ToDo-List-Single-Page-APP" target="_blank">Ver mais</a>
+          </div>
+
+          <div class="card">
+            <h2>Raiz Forte - E-commerce</h2>
+            <p>E-commerce desenvolvido para a empresa Raiz Forte com o objetivo de alcançar clientes em todo território brasileiro. A aplicação foi desenvolvida utilizando React, JS, HTML e CSS.</p>
+            <a class="btn" href="http://raizfortesubstratos.com/" target="_blank">Ver mais</a>
+          </div>
+
+          <div class="card">
+            <h2>LuckSpinBet - Casa de Apostas</h2>
+            <p>Aplicação desenvolvida para a casa de apostas LuckSpinBet utilizando de PHP combinado ao Framework Laravel para o backend, sistemas de notificações em Socket.io, front-end em HTML, CSS, JS & Bootstrap.</p>
+            <a class="btn" href="https://luckspinbet.com/" target="_blank">Ver mais</a>
+          </div>
+        </div>
+      </body>
+      
+      <script>
+        window.addEventListener('load', function() {
+            var typed = new Typed('.profile-description p', {
+                strings: ['Quem eu sou?', 'Prezado cliente, se você está procurando por um desenvolvedor freelancer confiável e experiente em PHP, React, VueJS e Flutter, que já trabalhou em projetos de sucesso, eu sou a pessoa certa para você. Com mais de 3 anos de experiência em desenvolvimento de software, eu tenho habilidades e conhecimento para criar aplicativos e websites robustos e de alta qualidade para sua empresa. Já trabalhei em diversos projetos, incluindo ecommerces, aplicativos bancários e websites de empresas. Como um desenvolvedor freelance, valorizo muito a confiança e a transparência no relacionamento com meus clientes. É por isso que mantenho uma comunicação clara e constante ao longo do projeto, compartilhando atualizações e entregando resultados dentro do prazo acordado. Além disso, tenho um compromisso firme com a qualidade e eficiência. Utilizo as melhores práticas e ferramentas para garantir que o código seja limpo, seguro e escalável. Meu objetivo é entregar um produto final que atenda às suas expectativas e requisitos, oferecendo uma experiência do usuário excepcional. Se você está procurando por um desenvolvedor freelancer confiável, experiente e comprometido, por favor, entre em contato comigo para discutirmos o seu projeto. Tenho certeza que poderei ajudá-lo a alcançar seus objetivos de negócio e criar um produto que você e seus clientes vão adorar.'],
+                typeSpeed: 2
+            });
+        });
+    </script>
+    
+</html>

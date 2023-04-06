@@ -2,97 +2,231 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio</title>
-        <!-- jQuery CDN -->
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <title>LdSH - WebSite</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-        <!-- GSAP CDN -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
-
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/2aa77c310e.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" />
     </head>
-	<title>LdSH Developer</title>
     <body>
-        <div class="container">
-          <div class="header">
-            <h1 class="logo">Procurando um desenvolvedor para fazer o website de sua empresa?</h1>
-            <a class="btn btn-contato" href="https://api.whatsapp.com/send/?phone=5551989007666&text=*Gostaria%20de%20realizar%20um%20or%C3%A7amento!*&type=phone_number&app_absent=0" target='_blank'>Realizar orçamento</a>
-          </div>
 
-          <div class="profile">
-              <img src="assets/img/profile.jpg" alt="Imagem de Perfil">
-              <div class="profile-description">
-                <p>Quem eu sou?</p>
-              </div>
-          </div>
-          
-        <ul class="skills-list">
-			<li>
-				<span class="skill-name">Programação</span>
-				<div class="skill-level">
-					<div class="progress-bar" style="width: 100%;"></div>
-				</div>
-			</li>
-			<li>
-				<span class="skill-name">Design</span>
-				<div class="skill-level">
-					<div class="progress-bar" style="width: 100%;"></div>
-				</div>
-			</li>
-			<li>
-				<span class="skill-name">Criatividade</span>
-				<div class="skill-level">
-					<div class="progress-bar" style="width: 100%;"></div>
-				</div>
-			</li>
-			<li>
-				<span class="skill-name">Comunicação</span>
-				<div class="skill-level">
-					<div class="progress-bar" style="width: 100%;"></div>
-				</div>
-			</li>
-			<li>
-				<span class="skill-name">Trabalho em equipe</span>
-				<div class="skill-level">
-					<div class="progress-bar" style="width: 100%;"></div>
-				</div>
-			</li>
-		</ul>
+        <nav class="navbar">
+            <div id="profile" class="navbar-item active">Perfil</div>
+            <div id="projects" class="navbar-item">Projetos</div>
+            <div id="knowledge" class="navbar-item">Conhecimentos</div>
+        </nav>
 
-          <div class="card">
-            <h2>Nasa - Analisador de corpos celestes (W.I.P)</h2>
-            <p>Em fevereiro de 2023, inicializei a construção de um software cujo objetivo é identificar corpos celestes de imagens provindas de satélites da Nasa. Para a realização do projeto estou utilizando as API's da NASA, mais especificamente a APOD. Quando recebo as imagens do dia, direciono elas para diversas técnicas de processamento utilizando cv2, mathplotlib e numpy, visando identificar formatos esféricos e corpos com colorações semelhantes a do catálogo de níveis de estrelas. Após isso, salvo o arquivo modificado com os contornos nas estrelas e específico a densidade estelar da imagem.</p>
-            <a class="btn" href="https://github.com/LdSH-dev/NasaImageAnalyzer" target="_blank">Ver mais</a>
-          </div>
-          
-          <div class="card">
-            <h2>Lista de tarefas - Single Page Application</h2>
-            <p>O projeto consiste em demonstrar meus conhecimentos em PHP utilizando o framework CodeIgniter, bem como utilizar JQuery para realizar as operações da ToDo List sem reloads de página no processamento.</p>
-            <a class="btn" href="https://github.com/LdSH-dev/ToDo-List-Single-Page-APP" target="_blank">Ver mais</a>
-          </div>
-
-          <div class="card">
-            <h2>Raiz Forte - E-commerce</h2>
-            <p>E-commerce desenvolvido para a empresa Raiz Forte com o objetivo de alcançar clientes em todo território brasileiro. A aplicação foi desenvolvida utilizando React, JS, HTML e CSS.</p>
-            <a class="btn" href="http://raizfortesubstratos.com/" target="_blank">Ver mais</a>
-          </div>
-
-          <div class="card">
-            <h2>LuckSpinBet - Casa de Apostas</h2>
-            <p>Aplicação desenvolvida para a casa de apostas LuckSpinBet utilizando de PHP combinado ao Framework Laravel para o backend, sistemas de notificações em Socket.io, front-end em HTML, CSS, JS & Bootstrap.</p>
-            <a class="btn" href="https://luckspinbet.com/" target="_blank">Ver mais</a>
-          </div>
+        <div class="profile">
+            <img class="profile-pic" src="assets/img/profile.jpg" alt="Foto do perfil">
+            <h2 class="profile-name">Leonardo Hemming</h2>
+            <p class="profile-title">Desenvolvedor Web FullStack & Mobile</p>
+            <p class="profile-bio">Busco sempre realizar as melhores práticas de coding, deixando as linhas de código claras e estruturadas e baseando-me no design pattern strategy. Além disso, foco em utilizar os padrões de commits semânticos, facilitando o trabalho de meus semelhantes. Trabalho há dois anos com PHP e tenho vasto conhecimento dos frameworks Laravel e Codeigniter. Visando obter ainda mais conhecimento, realizei diversos cursos através da plataforma Alura, dentre eles estão os tópicos de Python, DataScience, PHP, React & Flutter.</p>
         </div>
-      </body>
-      
-      <script>
-        window.addEventListener('load', function() {
-            var typed = new Typed('.profile-description p', {
-                strings: ['Quem eu sou?', 'Prezado cliente, se você está procurando por um desenvolvedor freelancer confiável e experiente em PHP, React, VueJS e Flutter, que já trabalhou em projetos de sucesso, eu sou a pessoa certa para você. Com mais de 3 anos de experiência em desenvolvimento de software, eu tenho habilidades e conhecimento para criar aplicativos e websites robustos e de alta qualidade para sua empresa. Já trabalhei em diversos projetos, incluindo ecommerces, aplicativos bancários e websites de empresas. Como um desenvolvedor freelance, valorizo muito a confiança e a transparência no relacionamento com meus clientes. É por isso que mantenho uma comunicação clara e constante ao longo do projeto, compartilhando atualizações e entregando resultados dentro do prazo acordado. Além disso, tenho um compromisso firme com a qualidade e eficiência. Utilizo as melhores práticas e ferramentas para garantir que o código seja limpo, seguro e escalável. Meu objetivo é entregar um produto final que atenda às suas expectativas e requisitos, oferecendo uma experiência do usuário excepcional. Se você está procurando por um desenvolvedor freelancer confiável, experiente e comprometido, por favor, entre em contato comigo para discutirmos o seu projeto. Tenho certeza que poderei ajudá-lo a alcançar seus objetivos de negócio e criar um produto que você e seus clientes vão adorar.'],
-                typeSpeed: 2
-            });
-        });
-    </script>
+
+        <div class="projects">
+            <div class="card-container">
+                <div class="card" style="background-image: url('assets/img/Nasa.jpeg');">
+                  <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Nasa - Analisador de corpos celestes (W.I.P)</h3>
+                    <p class="card-description">Projeto</p>
+                    <a class="card-button" href="https://github.com/LdSH-dev/NasaImageAnalyzer" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/Raizforte.jpeg'); background-position: center center; background-size: cover;">
+                  <div class="card-icon">
+                    <i class="fas fa-terminal"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Raiz Forte <br> E-commerce</h3>
+                    <p class="card-description">Trabalho</p>
+                    <a class="card-button" href="http://raizfortesubstratos.com/" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/Luck.jpeg'); background-position: center center; background-size: cover;">
+                  <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">LuckSpinBet - Casa de Apostas</h3>
+                    <p class="card-description">Trabalho</p>
+                    <a class="card-button" href="https://luckspinbet.com/" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+              
+              
     
+        </div>
+
+        <div class="knowledge">
+            <div class="tabs">
+              <button class="tablink" onclick="openTab(event, 'mobile')">Mobile</button>
+              <button class="tablink" onclick="openTab(event, 'back-end')">Back-End</button>
+              <button class="tablink" onclick="openTab(event, 'front-end')">Front-End</button>
+            </div>
+          
+            <div id="mobile" class="tabcontent">
+              <div class="stack mobile">
+                <div>
+                  <i class="devicon devicon-react-original"></i>
+                  React Native
+                </div>
+                <div>
+                    <i class="devicon-flutter-plain"></i>
+                  Flutter
+                </div>
+              </div>
+            </div>
+          
+            <div id="back-end" class="tabcontent">
+              <div class="stack back-end">
+                <div>
+                  <i class="devicon devicon-nodejs-plain"></i>
+                  NodeJS
+                </div>
+                <div>
+                  <i class="devicon devicon-python-plain"></i>
+                  Python
+                </div>
+                <div>
+                  <i class="devicon devicon-php-plain"></i>
+                  PHP
+                </div>
+                <div>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  JS
+                </div>
+                <div>
+                  <i class="devicon devicon-laravel-plain"></i>
+                  Laravel
+                </div>
+                <div>
+                  <i class="devicon devicon-nestjs-plain"></i>
+                  NestJS
+                </div>
+              </div>
+            </div>
+          
+            <div id="front-end" class="tabcontent">
+              <div class="stack front-end">
+                <div>
+                  <i class="devicon devicon-react-original"></i>
+                  ReactJS
+                </div>
+                <div>
+                  <i class="devicon devicon-vuejs-plain"></i>
+                  VueJS
+                </div>
+                <div>
+                  <i class="devicon devicon-html5-plain"></i>
+                  HTML
+                </div>
+                <div>
+                  <i class="devicon devicon-css3-plain"></i>
+                  CSS
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+          
+        <footer class="invisible-footer">
+            <ul class="social-icons">
+              <li><a href="https://www.linkedin.com/in/leonardo-da-silva-hemming-71a81120b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100069168735295" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://web.whatsapp.com/send/?phone=5551989007666&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a href="mailto:leonardohemming@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </footer>
+          
+    </body>
+    <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.classList.add("active");
+        }
+
+document.getElementsByClassName("tablink")[0].click();
+
+
+        const navbarItems = document.querySelectorAll('.navbar-item');
+        
+        navbarItems.forEach(item => {
+          item.addEventListener('click', () => {
+            navbarItems.forEach(item => item.classList.remove('active'));
+            item.classList.add('active');
+
+            if (item.id == 'profile')
+            {
+                $('.projects').hide();
+                $('.knowledge').hide();
+                $('.profile').show();
+            }
+
+            if (item.id == 'projects')
+            {
+                $('.profile').hide();
+                $('.knowledge').hide();
+                $('.projects').show();
+            }
+
+            if (item.id == 'knowledge')
+            {
+                $('.projects').hide();
+                $('.profile').hide();
+                $('.knowledge').show();
+            }
+
+          });
+        });
+
+
+        //Nasa Modal
+
+            const button = $('#button-nasa');
+
+            const modal = $('#modal-nasa');
+
+            button.on('click', function() {
+              modal.css('display', 'block');
+            });
+
+            $(window).on('click', function(event) {
+              if (event.target == modal[0]) {
+                modal.css('display', 'none');
+              }
+            });
+
+        //
+
+        //RaizForte Modal
+
+            $('#button-raizforte').on('click', function() {
+                $('#modal-raizforte').css('display', 'block');
+            });
+            
+            $(window).on('click', function(event) {
+              if (event.target == $('#modal-raizforte')[0]) {
+                $('#modal-raizforte').css('display', 'none');
+              }
+            });
+            
+        //
+
+    </script>
 </html>

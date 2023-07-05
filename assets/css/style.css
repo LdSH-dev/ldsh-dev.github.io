@@ -3,10 +3,10 @@ body {
     background: linear-gradient(125deg, #222121, #272829);
     color: #ddd;
     font-family: 'Roboto Mono', monospace;
-    background-image: url('../img/background.jpg'); 
+    /* background-image: url('../img/background.jpg');  */
     background-position: center center; 
     background-size: cover;
-    /* opacity: 0.8; */
+    opacity: 0.8;
     /* margin: 0; */
 }
 
@@ -23,6 +23,7 @@ html, body {
     align-items: center;
     border-bottom: 1px solid #ccc;
     height: 40px;
+    cursor:pointer;
 }
 
 .navbar-item {

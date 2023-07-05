@@ -5,7 +5,7 @@
         <title>LdSH - WebSite</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href='assets/css/style.css?<?php echo time(); ?>'>
         <script src="https://kit.fontawesome.com/2aa77c310e.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" />
@@ -27,6 +27,36 @@
 
         <div class="projects">
             <div class="card-container">
+                <div class="card" style="background-image: url('assets/img/timepay.png');">
+                  <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Time Pay Gateway</h3>
+                    <p class="card-description">Empresa</p>
+                    <a class="card-button" href="https://www.timepay.com.br/" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/superbike.png');">
+                  <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">SuperBike Brasil</h3>
+                    <p class="card-description">Projeto</p>
+                    <a class="card-button" href="https://www.superbike.com.br/" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/univates.png');">
+                  <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Univates</h3>
+                    <p class="card-description">Empresa</p>
+                    <a class="card-button" href="https://www.univates.br/" target="_blank">Saiba mais</a>
+                  </div>
+                </div>
                 <div class="card" style="background-image: url('assets/img/Nasa.jpeg');">
                   <div class="card-icon">
                     <i class="fas fa-code"></i>
@@ -146,7 +176,9 @@
         </footer>
           
     </body>
+    <script src="lazyload.js"></script>
     <script>
+
         function openTab(evt, tabName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
@@ -161,7 +193,7 @@
           evt.currentTarget.classList.add("active");
         }
 
-document.getElementsByClassName("tablink")[0].click();
+        document.getElementsByClassName("tablink")[0].click();
 
 
         const navbarItems = document.querySelectorAll('.navbar-item');
